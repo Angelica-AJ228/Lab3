@@ -4,7 +4,7 @@ int factorial (int n) {
 	int i = 1;
 	while (n > 1) {
 		i = i * n;
-		int n = n - 1;
+		n = n - 1; //se estaba redeclarando n, entonces que quita int
 	}
 	return i;
 }
