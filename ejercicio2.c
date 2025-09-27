@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define SIZE 3   // puede cambiar el tamaño de la matriz
+#define SIZE 4   // puede cambiar el tamaño de la matriz
 
 // Devuelve uno si es cuadrado, cero si no lo es
 int findLargestLine(int matrix[][SIZE]) {
@@ -61,9 +61,10 @@ void imprimirMatriz(int matrix[][SIZE]) {
 
 int main() {
     int matrix[SIZE][SIZE] = {
-        {2, 7, 6},
-        {9, 5, 1},
-        {4, 3, 8}
+        {16, 2, 3, 13},
+        {5, 11, 10, 8},
+        {9, 7, 6, 12},
+	{4, 14, 15, 1},
     };
 
     printf("La matriz utilizada corresponde a:\n");
