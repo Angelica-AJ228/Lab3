@@ -75,6 +75,25 @@ int main() {
         printf("La matriz NO es cuadrado magico.\n");
     }
 
+    //Aleatoria adicional
+    int aleatoria[SIZE][SIZE];
+    srand (time(NULL));
+    
+    for (int i = 0; i < SIZE; i++) {
+	    for (int j = 0; j < SIZE; j++) {
+			    aleatoria[i][j] = rand() % 9 + 1;
+	    }
+    }
+
+    printf("\nLa matriz aleatoria es:\n");
+    imprimirMatriz(aleatoria);
+
+    if (findLargestLine(aleatoria)) {
+	    printf("La matriz es cuadrado magico.\n");
+    } else {
+	    printf("La matriz NO es cuadrado magico.\n");
+
+    }
 
     return 0;
 }
